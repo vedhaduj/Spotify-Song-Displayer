@@ -58,10 +58,11 @@ DWORD GetPID(const char* ProcessName) {
 int main()
 {
 	
-		//still need to fix because fps drop when its on 
 		DWORD addy;
 		DWORD spotpid;
 		MODULEENTRY32 mod;
+	
+		//sometimes the song names will be cut-off so I just set it to a max of 50.
 		char spotifysong[50] = {};
 
 		spotpid = GetPID("Spotify.exe");
